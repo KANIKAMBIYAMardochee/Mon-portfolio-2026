@@ -1,3 +1,7 @@
+/* =========================
+   VARIABLES & RESET
+========================= */
+
 :root {
     --violet-doux: #6C63FF;
     --violet-fonce: #534EDD;
@@ -20,6 +24,10 @@ body {
     line-height: 1.6;
 }
 
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+
 header {
     background-color: white;
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.05);
@@ -39,13 +47,13 @@ header div a {
     color: var(--violet-doux);
 }
 
+ul {
+    display: flex;
+}
+
 ul li {
     list-style: none;
     margin-left: 25px;
-}
-
-ul {
-    display: flex;
 }
 
 ul li a {
@@ -72,7 +80,8 @@ ul li a::after {
     transition: width 0.3s ease;
 }
 
-ul li a:hover::after {
+ul li a:hover::after,
+a.active::after {
     width: 100%;
 }
 
@@ -80,10 +89,11 @@ a.active {
     color: var(--violet-doux);
 }
 
-a.active::after {
-    width: 100%;
-}
+/* =========================
+   PAGE ACCUEIL
+========================= */
 
+/* HERO */
 .hero {
     display: flex;
     justify-content: center;
@@ -104,7 +114,6 @@ a.active::after {
 .hero h1 {
     color: var(--violet-fonce);
     font-size: 4rem;
-    font-weight: 700;
     margin-bottom: 1.2rem;
 }
 
@@ -122,10 +131,8 @@ a.active::after {
     padding: 15px 30px;
     border-radius: 50px;
     text-transform: uppercase;
-    letter-spacing: 1.1px;
     font-weight: 600;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: 0.3s;
 }
 
 .hero a:hover {
@@ -133,6 +140,7 @@ a.active::after {
     transform: translateY(-3px);
 }
 
+/* A PROPOS */
 .apropos {
     width: 800px;
     margin: 6rem auto;
@@ -142,8 +150,6 @@ a.active::after {
 section h2 {
     color: var(--violet-doux);
     font-size: 2.6rem;
-    font-weight: 700;
-    position: relative;
     text-align: center;
 }
 
@@ -154,55 +160,195 @@ section h2::after {
     height: 4px;
     background-color: var(--violet-doux);
     margin: 1.2rem auto;
-    border-radius: 2px;
 }
 
 .apropos p {
     margin-bottom: 2rem;
     color: var(--gris-fonce);
-    font-size: 1.2rem;
 }
 
+/* COMPETENCES */
 .competences table {
     width: 80%;
     margin: 0 auto;
     border-collapse: collapse;
     background-color: #FFF;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-.competences table th, .competences table td {
+.competences table th,
+.competences table td {
     padding: 15px;
 }
 
 .competences table thead {
     background-color: var(--violet-doux);
     color: #FFF;
-    text-transform: uppercase;
 }
 
 .competences table tbody td {
-    /* ajoute une bordure de 1px en bas de chaque cellule */
-    border-bottom: 1px solid var(--gris-clair); 
-}
-
-.competences table tbody tr:nth-child(even) {
-    background-color: #FDFDFD;
-}
-
-.competences table tbody tr {
-    transition: background-color 0.3s ease;
+    border-bottom: 1px solid var(--gris-clair);
 }
 
 .competences table tbody tr:hover {
     background-color: #F0F0F0;
 }
 
-.competences table thead th {
-    text-align: left;
+/* =========================
+   PAGE PROJETS
+========================= */
+
+/* EN-TETE */
+.en-tete-section {
+    text-align: center;
+    margin: 60px 0;
 }
+
+.titre-bleu {
+    color: var(--violet-doux);
+    font-size: 2.8rem;
+}
+
+.ligne-separation {
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 10px auto;
+}
+
+/* GRILLE */
+.grille-projets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* CARTE */
+.carte-projet {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.carte-projet:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE (IMPORTANT DEMANDE PROF) */
+.image-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 4px solid var(--violet-doux);
+}
+
+/* TEXTE */
+.infos-projet {
+    padding: 25px 20px;
+}
+
+.infos-projet h3 {
+    color: var(--violet-doux);
+    margin-bottom: 10px;
+}
+
+.infos-projet p {
+    color: var(--gris-fonce);
+    margin-bottom: 15px;
+}
+
+/* BADGES */
+.tags-techno span {
+    background-color: #EEE;
+    color: var(--violet-doux);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+/* LIENS */
+.pied-projet {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #EEE;
+    padding-top: 10px;
+}
+
+.pied-projet a,
+.pied-projet span {
+    text-decoration: none;
+    color: var(--gris-tres-fonce);
+    font-weight: bold;
+}
+
+.pied-projet a:hover {
+    color: var(--violet-doux);
+}
+
+/* =========================
+   PAGE CONTACT
+========================= */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.contact-card {
+    background: white;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.formulaire-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.groupe-input input,
+.groupe-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.bouton-envoi {
+    background: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.separation {
+    margin: 20px 0;
+    color: #999;
+}
+
+.bouton-whatsapp {
+    display: flex;
+    justify-content: center;
+    background: #25D366;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     margin-top: 3rem;
@@ -213,18 +359,140 @@ footer {
 
 footer p {
     color: white;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 footer a {
-    display: inline-block;
     font-size: 1.6rem;
     color: white;
     margin: 0 10px;
-    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 footer a:hover {
     color: var(--orange-vif);
-    transform: translateY(-3px);
+}
+
+/* --- STYLE PAGE PASSIONS --- */
+.grille-passions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 50px 80px;
+    flex-wrap: wrap; /* Pour que les cartes passent l'une sous l'autre sur mobile */
+}
+
+.carte-passion {
+    background: white;
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.carte-passion:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(108, 99, 255, 0.2); /* Halo violet au survol */
+}
+
+.image-passion img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carte-passion:hover .image-passion img {
+    transform: scale(1.1); /* L'image zoome un peu au survol */
+}
+
+.contenu-passion {
+    padding: 30px 20px;
+}
+
+.contenu-passion i {
+    font-size: 2.5rem;
+    color: var(--violet-doux);
+    margin-bottom: 15px;
+}
+
+.contenu-passion h3 {
+    margin-bottom: 15px;
+    color: var(--violet-doux);
+}
+
+/* --- STYLE PAGE DIVERTISSEMENT (ALTERNE) --- */
+.divert-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px 80px;
+}
+
+.divert-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+.divert-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.divert-image {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(108, 99, 255, 0.2);
+    border: 4px solid white;
+}
+
+.divert-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.divert-image:hover img {
+    transform: scale(1.05);
+}
+
+.divert-text {
+    flex: 1.2;
+}
+
+.divert-text h3 {
+    color: var(--violet-doux);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.divert-text p {
+    font-size: 1.1rem;
+    color: var(--gris-fonce);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Adaptabilité Mobile */
+@media (max-width: 800px) {
+    .divert-row, .divert-row.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .divert-image img { height: 250px; }
 }

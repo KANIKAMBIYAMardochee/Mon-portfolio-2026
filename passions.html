@@ -1,37 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Mon Portfolio - Passions</title>
     <link rel="stylesheet" href="css/Style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div>
-            <a href="">Mon Portfolio</a>
+            <a href="index.html">Mon Portfolio</a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html">Projets</a></li>
-                <li><a href="passions.html"  class="active">Passions</a></li>
+                <li><a href="passions.html" class="active">Passions</a></li>
                 <li><a href="divertissement.html">Divertissement</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-  <main>Voici mes passions</main>
-    <footer>
+
+    <main>
+        <div class="en-tete-section">
+            <h2 class="titre-bleu">Mon Univers Personnel</h2>
+            <div class="ligne-separation"></div>
+        </div>
+
+        <section class="grille-passions">
+            
+            <div class="carte-passion">
+                <div class="image-passion">
+                    <img src="images/lion-passion.jpg" alt="Le Lion - Force et Mentalité">
+                </div>
+                <div class="contenu-passion">
+                    <i class="fa-solid fa-shield-cat"></i>
+                    <h3>Le Lion</h3>
+                    <p>Discipline, courage et leadership. Une mentalité de fer pour relever tous les défis.</p>
+                </div>
+            </div>
+
+            <div class="carte-passion">
+                <div class="image-passion">
+                    <img src="images/code-passion.jpg" alt="Le Code - Rigueur">
+                </div>
+                <div class="contenu-passion">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Le Code</h3>
+                    <p>Le langage de la logique. Transformer des idées abstraites en solutions concrètes.</p>
+                </div>
+            </div>
+
+            <div class="carte-passion">
+                <div class="image-passion">
+                    <img src="images/etude-passion.jpg" alt="Apprentissage - Croissance">
+                </div>
+                <div class="contenu-passion">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <h3>Apprentissage</h3>
+                    <p>Lecture, recherches et découvertes. Une curiosité sans limite pour nourrir ma croissance.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer-portfolio">
         <p>@ 2026 Mardochée. Tous droits réservés.</p>
-        <div>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="reseaux">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
 </body>

@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Mon Portfolio - Divertissement</title>
     <link rel="stylesheet" href="css/Style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <a href="">Mon Portfolio</a>
-        </div>
+        <div><a href="index.html">Mon Portfolio</a></div>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -25,13 +23,50 @@
             </ul>
         </nav>
     </header>
-  <main>Voici mon Divertissement</main>
+
+    <main class="divert-container">
+        <div class="en-tete-section">
+            <h2 class="titre-bleu">Mes Divertissement</h2>
+            <div class="ligne-separation"></div>
+        </div>
+
+        <section class="divert-row">
+            <div class="divert-image">
+                <img src="images/loisir-musique.jpg" alt="Ma passion pour la Musique">
+            </div>
+            <div class="divert-text">
+                <h3><i class="fa-solid fa-music"></i> L'Univers Musical</h3>
+                <p>La musique est bien plus qu'un simple bruit de fond pour moi ; c'est un moteur de créativité qui m'accompagne dans chaque ligne de code. Elle possède ce pouvoir unique de traduire des émotions que les mots ne peuvent exprimer et de transformer une séance de travail intense en un moment de pure inspiration. Qu'il s'agisse de mélodies calmes pour me concentrer ou de rythmes énergiques pour me motiver, elle reste ma compagne fidèle au quotidien.</p>
+            </div>
+        </section>
+
+        <section class="divert-row reverse">
+            <div class="divert-image">
+                <img src="images/loisir-jeux.jpg" alt="Ma passion pour les Jeux Vidéo">
+            </div>
+            <div class="divert-text">
+                <h3><i class="fa-solid fa-gamepad"></i> L'Art du Jeu Vidéo</h3>
+                <p>Les jeux vidéo représentent pour moi le sommet de l'interactivité et de l'immersion technologique. Au-delà du simple divertissement, j'y vois une source d'apprentissage sur la résolution de problèmes complexes et la persévérance. Chaque univers virtuel est une leçon de design et d'ergonomie qui nourrit ma réflexion de développeur. C'est un espace où la stratégie et la rapidité d'esprit sont constamment sollicitées pour surmonter de nouveaux défis.</p>
+            </div>
+        </section>
+
+        <section class="divert-row">
+            <div class="divert-image">
+                <img src="images/loisir-foot.jpg" alt="Ma passion pour le Football">
+            </div>
+            <div class="divert-text">
+                <h3><i class="fa-solid fa-soccer-ball"></i> La Passion du Football</h3>
+                <p>Le football incarne à mes yeux les valeurs fondamentales de l'esprit d'équipe et de la discipline. C'est un sport qui m'enseigne la force du collectif : seul on va plus vite, mais ensemble on va plus loin. Sur le terrain comme dans la vie, chaque match est une preuve que la détermination et l'effort constant finissent toujours par payer. C'est mon moment de déconnexion totale où seul comptent le jeu, la stratégie et le dépassement de soi.</p>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p>@ 2026 Mardochée. Tous droits réservés.</p>
-        <div>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="reseaux">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
 </body>

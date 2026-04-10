@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio - Projets</title>
     <link rel="stylesheet" href="css/Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -26,86 +26,125 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Mes Réalisations</h2>
+    <main class="page-projets">
+        <div class="en-tete-section">
+            <h2 class="titre-bleu">Mes Réalisations</h2>
+            <div class="ligne-separation"></div>
+        </div>
 
         <section class="grille-projets">
             
             <div class="carte-projet">
-                <img src="images/ecommerce.jpg" alt="Site E-commerce">
-                <h3>Site E-commerce</h3>
-                <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
-                <p><strong>HTML CSS JS</strong></p>
-                <div class="liens">
-                    <a href="#">Code</a>
-                    <a href="#">Démo</a>
+                <div class="image-container">
+                    <img src="images/ecommerce.jpg" alt="Site E-commerce">
+                </div>
+                <div class="infos-projet">
+                    <h3>Site E-commerce</h3>
+                    <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+                    <div class="tags-techno">
+                        <span>HTML</span> <span>CSS</span> <span>JS</span>
+                    </div>
+                    <div class="pied-projet">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                    </div>
                 </div>
             </div>
 
             <div class="carte-projet">
-                <img src="images/taches.jpg" alt="Gestionnaire de tâches">
-                <h3>Gestionnaire de Tâches</h3>
-                <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
-                <p><strong>Python Flask</strong></p>
-                <div class="liens">
-                    <a href="#">Code</a>
-                    <a href="#">Démo</a>
+                <div class="image-container">
+                    <img src="images/taches.jpg" alt="Gestionnaire de tâches">
+                </div>
+                <div class="infos-projet">
+                    <h3>Gestionnaire de Tâches</h3>
+                    <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+                    <div class="tags-techno">
+                        <span>Python</span> <span>Flask</span>
+                    </div>
+                    <div class="pied-projet">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                    </div>
                 </div>
             </div>
 
             <div class="carte-projet">
-                <img src="images/blog.jpg" alt="Blog personnel">
-                <h3>Blog Personnel</h3>
-                <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
-                <p><strong>PHP Laravel</strong></p>
-                <div class="liens">
-                    <a href="#">Code</a>
-                    <span>Bientôt</span>
+                <div class="image-container">
+                    <img src="images/blog.jpg" alt="Blog personnel">
+                </div>
+                <div class="infos-projet">
+                    <h3>Blog Personnel</h3>
+                    <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
+                    <div class="tags-techno">
+                        <span>PHP</span> <span>Laravel</span>
+                    </div>
+                    <div class="pied-projet">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <span><i class="fa-solid fa-clock"></i> Bientôt</span>
+                    </div>
                 </div>
             </div>
 
             <div class="carte-projet">
-                <img src="images/analyse.jpg" alt="Dashboard">
-                <h3>Dashboard d'Analyse</h3>
-                <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib.</p>
-                <p><strong>Python Data</strong></p>
-                <div class="liens">
-                    <a href="#">Code</a>
-                    <a href="#">Démo</a>
+                <div class="image-container">
+                    <img src="images/analyse.jpg" alt="Dashboard">
+                </div>
+                <div class="infos-projet">
+                    <h3>Dashboard d'Analyse</h3>
+                    <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib.</p>
+                    <div class="tags-techno">
+                        <span>Python</span> <span>Data</span>
+                    </div>
+                    <div class="pied-projet">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                    </div>
                 </div>
             </div>
 
             <div class="carte-projet">
-                <img src="images/meteo.jpg" alt="Application météo">
-                <h3>Application Météo</h3>
-                <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
-                <p><strong>JavaScript API</strong></p>
-                <div class="liens">
-                    <a href="#">Code</a>
-                    <a href="#">Démo</a>
+                <div class="image-container">
+                    <img src="images/meteo.jpg" alt="Application météo">
+                </div>
+                <div class="infos-projet">
+                    <h3>Application Météo</h3>
+                    <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+                    <div class="tags-techno">
+                        <span>JavaScript</span> <span>API</span>
+                    </div>
+                    <div class="pied-projet">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                    </div>
                 </div>
             </div>
 
             <div class="carte-projet">
-                <img src="images/maquette.jpg" alt="Maquette mobile">
-                <h3>Maquette Mobile UI</h3>
-                <p>Conception d’une interface utilisateur moderne pour une application de fitness.</p>
-                <p><strong>Figma Design</strong></p>
-                <div class="liens">
-                    <a href="#">Design</a>
-                    <a href="#">Aperçu</a>
+                <div class="image-container">
+                    <img src="images/maquette.jpg" alt="Maquette mobile">
+                </div>
+                <div class="infos-projet">
+                    <h3>Maquette Mobile UI</h3>
+                    <p>Conception d’une interface utilisateur moderne pour une application de fitness.</p>
+                    <div class="tags-techno">
+                        <span>Figma</span> <span>Design</span>
+                    </div>
+                    <div class="pied-projet">
+                        <a href="#"><i class="fa-solid fa-pen-nib"></i> Design</a>
+                        <a href="#"><i class="fa-solid fa-eye"></i> Aperçu</a>
+                    </div>
                 </div>
             </div>
 
         </section>
     </main>
 
-    <footer>
+    <footer class="footer-portfolio">
         <p>@ 2026 Mardochée. Tous droits réservés.</p>
-        <div>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="reseaux">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
 </body>
